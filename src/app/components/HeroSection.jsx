@@ -1,5 +1,7 @@
+"use client"
 import Image from "next/image";
 import React from "react";
+import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
   return (
@@ -10,7 +12,13 @@ const HeroSection = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               Hello, I'm{" "}
             </span>
-            Leonardo
+            <br />
+            <TypeAnimation
+              sequence={["Leonardo", 1000, "Web Developer", 1000]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+            />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
