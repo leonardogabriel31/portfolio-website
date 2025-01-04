@@ -12,3 +12,12 @@ const compat = new FlatCompat({
 const eslintConfig = [...compat.extends("next/core-web-vitals")];
 
 export default eslintConfig;
+// Configuración del parser y parserOptions
+// export const parser = "@typescript-eslint/parser"; // Si usas TypeScript
+export const parserOptions = {
+  ecmaVersion: 2020,
+  sourceType: "module",
+  ecmaFeatures: {
+    jsx: true,
+  },
+};
