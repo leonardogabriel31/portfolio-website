@@ -71,9 +71,10 @@ const ProjectsSection = () => {
         />
       </div>
       <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {filteredProjects.map((project) => (
+        {filteredProjects.map((project, index) => (
           <ProjectCard
-            key={project.id}
+            key={index}
+            // key={project.id}
             title={project.title}
             description={project.description}
             imgUrl={project.image}
