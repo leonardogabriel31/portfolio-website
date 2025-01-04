@@ -9,15 +9,6 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = [
-  ...compat.extends("next/core-web-vitals"),
-  {
-    // Aquí puedes agregar reglas personalizadas si es necesario
-    rules: {
-      // Ejemplo de regla personalizada
-      "no-console": "warn",
-    },
-  },
-];
+const eslintConfig = [...compat.extends("next/core-web-vitals")];
 
 export default eslintConfig;
