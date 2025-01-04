@@ -13,7 +13,7 @@ const EmailSection = () => {
           best to get back to you.
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
+          <Link href="https://github.com">
             <Image
               className="rounded-lg"
               src={"/github.png"}
@@ -22,7 +22,7 @@ const EmailSection = () => {
               height={50}
             />
           </Link>
-          <Link href="linkedin.com">
+          <Link href="https://linkedin.com">
             <Image
               className="rounded-lg"
               src={"/linkedin.png"}
